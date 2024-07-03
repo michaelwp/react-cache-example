@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 
 function App() {
+    // @ts-ignore
     const [data, setData] = useState<string>(JSON.parse(localStorage.getItem('data')));
 
     useEffect(() => {
